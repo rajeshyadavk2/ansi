@@ -16,9 +16,9 @@
     yum:
        name: "{{webserveronamazon}}"
        state: present
-    when: ansible_os_family =="Redhat"   
+    when: ansible_os_family =="RedHat"   
   - name: starting httpd on redhat node
     service:
        name: "{{webserveronamazon}}"
        state: started      
-    when: ansible_os_family =="Redhat"
+    when: ansible_os_family =="RedHat"
