@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: install git,wget,tree softwares
+    apt:
+     name: git
+     state: present
+  - name: install wget software
+    apt:
+     name: wget
+     state: present
+  - name: install tree
+    apt:
+     name: tree
+     state: present
