@@ -4,4 +4,4 @@ webserveronubuntu: apache2
 webserveronamazon: httpd
 
 javaonubuntu: openjdk-8-jre
-javaonamazon: java-1.7.0-openjdk
+javaonamazon: java-1.8.0-openjdk
