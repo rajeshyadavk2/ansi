@@ -1,0 +1,17 @@
+---
+- hosts: local host
+  become: yes
+  tasks:
+  - name: creation
+    ec2:
+     key_name: rajesh
+     instance_type: t2.micro
+     image: ami-0190e502a849a00a0
+     wait: yes
+     group: rajeshsg
+     region: us-east-1
+     count: 2
+     vpc_subnet_id: subnet-7f287123
+     assign_public_ip: yes
+     instance_tags:
+         Name: ansible_nodes
